@@ -1,12 +1,14 @@
 # Arduino_IoT
 
-IoT_Server: Django Server
-wvenv: Windows Virtual Environment
+IoT_Server: ```Django Server```
 
-# wvenv
-activation: wvenv/Script/activate
-deactivation: deactivation
+wvenv: ```Windows Virtual Environment```
 
-# IoT_Server
+## wvenv
+activation: ```wvenv/Script/activate```
 
-runserver: python manage.py runserver
+deactivation: ```deactivation```
+
+## IoT_Server
+
+runserver: ```python manage.py runserver```
