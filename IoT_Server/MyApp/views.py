@@ -17,7 +17,7 @@ def home(request):
 
 def Info(request):
     objects = dataSensor.objects.all()
-    return render(request, 'info.html', {'dataSensor': objects})
+    return render(request, 'info_v2.html', {'dataSensor': objects})
 
 
 @api_view(["POST"])
