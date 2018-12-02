@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sensors</title>
+  </head>
+  <body>
+    <h1>Sensors</h1>
+
+    {% for sensor in dataSensor %}
+      {{ sensor.name }}, {{sensor.description}}, {{sensor.value}} <br>
+    {% endfor %}
+
+  </body>
+</html>
