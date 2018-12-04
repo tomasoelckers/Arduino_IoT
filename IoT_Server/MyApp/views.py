@@ -24,7 +24,8 @@ def Info(request):
 def postInfo(Data):
     try:
         body=json.loads(Data.body)
-        output =str(body)
-        return JsonResponse(output,safe=False)
+        for i in body:
+            dataSensor.objects.filter(name=i).update(value=body[i])
+        return JsonResponse(body,safe=False)
     except ValueError as e:
         return Response(e.args[0],status.HTTP_400_BAD_REQUEST)
